@@ -14,7 +14,7 @@ import org.apache.poi.ss.util.CellReference;
  * @version   0.0.00.GA
  * @since     0.0.00.GA
  */
-public class AreaRefBuilder {
+public class CellAreaBuilder {
 
     public static List<Map<String, String>> cellAreaNames(String colArea, String rowArea){
         String[] columns = AreaBuilder.parseColumnArea(colArea);

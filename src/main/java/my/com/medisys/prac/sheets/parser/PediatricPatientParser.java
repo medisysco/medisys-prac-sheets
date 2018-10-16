@@ -7,7 +7,7 @@ import java.util.Map;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
 
-import my.com.medisys.prac.sheets.AreaRefBuilder;
+import my.com.medisys.prac.sheets.CellAreaBuilder;
 import my.com.medisys.prac.sheets.model.PediatricPatient;
 
 /**
@@ -47,7 +47,7 @@ public class PediatricPatientParser {
      * @return
      */
     public static List<PediatricPatient> parse(Sheet sheet, String colArea, String rowArea){
-        List<Map<String, Cell>> rows = AreaRefBuilder.cellArea(sheet, colArea, rowArea);
+        List<Map<String, Cell>> rows = CellAreaBuilder.cellArea(sheet, colArea, rowArea);
         List<PediatricPatient> patients = new ArrayList<>();
         for (int i = 0; i < rows.size(); i++) {
             Map<String, Cell> row = rows.get(i);
