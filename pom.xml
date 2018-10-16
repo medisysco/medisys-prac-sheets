@@ -18,8 +18,8 @@
     <properties>
         <maven.build.timestamp.format>EEE, MMM dd yyyy, HH:mm Z</maven.build.timestamp.format>
         <implementation.vendor>${project.organization.name}</implementation.vendor>
-        <specification.vendor>${project.organization.name}</specification.vendor>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <specification.vendor>${project.organization.name}</specification.vendor>
         <version.medisys.maven.plugin.jar>2.6</version.medisys.maven.plugin.jar>
         <version.medisys.commons.logging>1.1.1</version.medisys.commons.logging>
         <version.medisys.oracle.ojdbc6>11.2.0.4</version.medisys.oracle.ojdbc6>
